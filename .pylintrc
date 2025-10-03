@@ -1,0 +1,13 @@
+[MASTER]
+init-hook=import sys, os; sys.path.insert(0, os.path.abspath("."))
+ignore-paths=src/_old/.*,tests/_old/.*
+
+[MESSAGES CONTROL]
+disable=
+    R0903   # too-few-public-methods
+
+[TYPECHECK]
+generated-members=InstalledAppFlow.run_console,Resource.tasks,Resource.events
+
+[FORMAT]
+max-line-length=100
